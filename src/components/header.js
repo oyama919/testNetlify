@@ -1,9 +1,10 @@
 import React from "react"
-import Links from "./links"
+import Links from "./linkList"
+import styles from "./header.module.css"
 
 export default props => (
-  <header>
-    <h1>{props.headerText}</h1>
+  <header className={styles.header}>
+    <h1 className={styles.header_logo}>{props.headerText}</h1>
     <Links />
   </header>
 )

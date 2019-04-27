@@ -1,0 +1,8 @@
+.wordList {
+ list-style-type: none;
+}
+.wordList_item {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px auto;
+}

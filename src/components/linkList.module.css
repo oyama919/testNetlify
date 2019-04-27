@@ -1,0 +1,13 @@
+.linkList {
+ list-style-type: none;
+ margin: 0;
+}
+.linkList_item {
+  display: inline-block;
+  margin-right: 15px;
+}
+.linkList_item_link {
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+}

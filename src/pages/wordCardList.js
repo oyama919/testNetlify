@@ -1,9 +1,10 @@
 import React from "react"
 import Header from "../components/header"
+import WordCardList from "../components/wordCardList"
 
 export default () => (
-  <div style={{ color: `teal` }}>
+  <main>
     <Header headerText="About Gatsby" />
-    <p>Such wow. Very React.2222</p>
-  </div>
+    <WordCardList />
+  </main>
 )
