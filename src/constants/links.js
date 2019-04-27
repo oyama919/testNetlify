@@ -11,8 +11,8 @@ const Links = [
   },
   {
     "key": 3,
-    "page": "/page03",
-    "name": "page03",
+    "page": "/fourTenses",
+    "name": "4つの時制",
   },
   {
     "key": 4,
