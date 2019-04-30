@@ -3,9 +3,10 @@
 }
 .wordCardList_word {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
   height: 250px;
   font-size: 60px;
+  word-break: break-all;
 }
 .wordCardList_translation {
   border-top: 1px solid #333;
