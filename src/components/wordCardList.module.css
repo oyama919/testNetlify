@@ -1,0 +1,50 @@
+.wordCardList {
+  width: 100%;
+}
+.wordCardList_word {
+  text-align: center;
+  padding-top: 10px;
+  height: 250px;
+  font-size: 60px;
+  word-break: break-all;
+}
+.wordCardList_translation {
+  border-top: 1px solid #333;
+  padding-bottom: 10px;
+}
+.wordCardList_translation_meaning {
+  text-align: center;
+  margin: 30px 0 0;
+  font-size: 30px;
+}
+.wordCardList_translation_key {
+  margin: 0;
+  text-align: right;
+  color: #7d7d7d;
+}
+.wordCardList_buttons {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.wordCardList_buttons_answer {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 23px;
+  background: #e4e4e4;
+  border-width: 0;
+}
+.wordCardList_buttons_next {
+  width: 50%;
+  padding: 10px 0;
+  font-size: 23px;
+  background: #fff;
+  border-width: 0;
+}
+.wordCardList_buttons_back {
+  width: 50%;
+  padding: 10px 0;
+  font-size: 23px;
+  background: #fff;
+  border-width: 0;
+}

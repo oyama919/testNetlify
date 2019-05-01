@@ -4,7 +4,7 @@ import WordCardList from "../components/wordCardList"
 
 export default () => (
   <main>
-    <Header headerText="About Gatsby" />
+    <Header headerText="単語 カード" />
     <WordCardList />
   </main>
 )
