@@ -16,8 +16,8 @@ const Links = [
   },
   {
     "key": 4,
-    "page": "/page04",
-    "name": "page04",
+    "page": "/basicWords",
+    "name": "グループ化した動詞",
   },
   {
     "key": 5,

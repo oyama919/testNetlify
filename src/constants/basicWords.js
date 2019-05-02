@@ -4,6 +4,7 @@ const usualWords = [];
 const progressWords = [];
 const pastWords = [];
 const futureWords = [];
+const basicWords = [];
 const person = ["I", "You", "We", "They"];
 const thirdPerson = ["He", "She", "It"];
 const personWithBe = ["I'm", "He's", "She's", "It's", "You're", "We're", "They're"];
@@ -43,6 +44,28 @@ const futureTmp = [
 ];
 const futureAskTmp = [
   "{person} gonna {verb}?",
+];
+// basicWordsテンプレート
+const basicTmp = [
+  "Can I {verb}?",
+  "Can You {verb}?",
+  "I wanna {verb}?",
+  "I don't wanna {verb}?",
+  "Do you wanna {verb}?",
+  "Do you want me to {verb}?",
+  "Why don't you {verb}?",
+  "I have to {verb}?",
+];
+const basicProgressTmp = [
+  "I've been {verb}",
+  "I haven't been {verb}",
+  "Have you been {verb}?",
+  "I'm used to {verb}",
+  "I'm sick of {verb}",
+  "I don't mind {verb}",
+  "I miss {verb}",
+  "I can't imagene {verb}",
+  "What happend to {verb}?",
 ];
 
 function replaceWord(msg, target, rw) {
@@ -95,10 +118,19 @@ personWithBeAsk.map(p => futureAskTmp.map(t => BasicVerbs.defaultVerbs.map(v => 
   return futureWords.push(replaceWord(tmp, 'verb', v));
 })));
 
+// basicWords
+basicTmp.map(t => BasicVerbs.defaultVerbs.map(v => {
+  return basicWords.push(replaceWord(t, 'verb', v));
+}));
+basicProgressTmp.map(t => BasicVerbs.progressVerbs.map(v => {
+  return basicWords.push(replaceWord(t, 'verb', v));
+}));
+
 const BasicWords = {
   usualWords,
   progressWords,
   pastWords,
   futureWords,
+  basicWords,
 };
 export default BasicWords;
