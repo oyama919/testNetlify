@@ -46,7 +46,6 @@ const verbsLove= [
 
 const defaultVerbs = verbsGeneral
   .concat(verbsPlay)
-  .concat(verbsPlay)
   .concat(verbsWork)
   .concat(verbsHousework)
   .concat(verbsLove);
