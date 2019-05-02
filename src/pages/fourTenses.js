@@ -1,26 +1,23 @@
 import React from "react"
 import Header from "../components/header"
-import BasicList from "../components/basicList"
 import BasicWords from "../constants/basicWords"
+import BasicList from "../components/basicList"
+import ListCounter from "../components/listCounter"
 
 export default () => (
-  <div style={{ color: `teal` }}>
+  <div style={{ color: `teal`, margin: `0` }}>
     <Header headerText="4つの時制" />
-    <section>
-      <h2>普段のこと・習慣</h2>
+    <ListCounter title="普段のこと・習慣" length={BasicWords.usualWords.length}>
       <BasicList words={BasicWords.usualWords} />
-    </section>
-    <section>
-      <h2>今している最中・一時的なこと</h2>
+    </ListCounter>
+    <ListCounter title="今している最中・一時的なこと" length={BasicWords.progressWords.length}>
       <BasicList words={BasicWords.progressWords} />
-    </section>
-    <section>
-      <h2>過去</h2>
+    </ListCounter>
+    <ListCounter title="過去" length={BasicWords.pastWords.length}>
       <BasicList words={BasicWords.pastWords} />
-    </section>
-    <section>
-      <h2>未来</h2>
+    </ListCounter>
+    <ListCounter title="未来" length={BasicWords.futureWords.length}>
       <BasicList words={BasicWords.futureWords} />
-    </section>
+    </ListCounter>
   </div>
 )
